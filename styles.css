@@ -1,2 +1,24 @@
+:root {
+  --spacing: 10px;
+  --blur: 5px;
+  --base: #ffc600;
+}
 
-/* Your CSS Code here. */
+body {
+  text-align: center;
+  background: #333;
+  color: white;
+  font-family: sans-serif;
+}
+
+.image {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  width: 60%;
+  transition: all 0.3s ease;
+}
+
+.controls {
+  margin: 20px;
+}

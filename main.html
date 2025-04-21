@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Video Speed Scrubber</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Variables Example</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="wrapper">
-    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" controls></video>
-    <div class="speed">
-      <div class="speed-bar">1×</div>
-    </div>
-  </div>
+<div class="controls">
+  <label for="spacing">Spacing:</label>
+  <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
 
-<script  src="./script.js">
-  //Your code goes here
-</script>
+  <label for="blur">Blur:</label>
+  <input type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
+
+  <label for="base">Base Color:</label>
+  <input type="color" name="base" value="#ffc600">
+</div>
+
+<img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="Sample" class="image"/>
+
+<script src="script.js"></script>
 </body>
 </html>
